@@ -217,7 +217,7 @@ function BookReader(props) {
                 <Text key={item.id}>
                   {item.displayMode === 'inline' ? (
                     <Text key={item.id}>
-                      <FastImage
+                      <Image
                         source={{uri: item.link}}
                         style={{height: fontSize + 2, width: fontSize + 2}}
                       />

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {View, Text, Dimensions} from 'react-native';
+import {View, Text, Dimensions, Image} from 'react-native';
 
 export default ImageObject = props => {
   const {link, height, width, displayMode, fontSize, percentFill} = props;
@@ -53,7 +53,7 @@ export default ImageObject = props => {
           <Text>Error Loading the image!</Text>
         )
       ) : null}
-      <FastImage
+      <Image
         source={{uri: link}}
         style={{minHeight: state.iHeight, minWidth: state.iWidth}}
         onError={() => {
